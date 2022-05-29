@@ -11,6 +11,13 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="preloader">
+            <div class="preloader__row">
+                <div class="preloader__item"></div>
+                <div class="preloader__item"></div>
+                <div class="preloader__item"></div>
+            </div>
+        </div>
         <header>
             <nav>
                 <div class="container container__1">
@@ -308,6 +315,15 @@
         <footer>
             <p class="footertext">Copyright &copy; 2021 Андрей Браун. Design by Web</p>
         </footer>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+            }
+    </script>
     <script src="js/bootstrap.bundle.js"></script>
     </body>
 </html>
