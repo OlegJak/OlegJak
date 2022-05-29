@@ -16,7 +16,7 @@
     right: 0;
     bottom: 0;
     background: #344051;
-    z-index: 5;
+    z-index: 100;
 }
 
 .preloader__row{
