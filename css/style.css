@@ -296,7 +296,7 @@ h2{
     background-size: 15px;
     transform: scale(1);
     transition: all 0.1s;
-
+    color: black;
 }
 
 #section__2__btn:hover{
@@ -355,7 +355,7 @@ h2{
 #section__3{
     width: 100%;
     min-height: 550px;
-    background-image: url(../img/section3background.jpg);
+    background: url(../img/section3background.jpg) 50%;
     background-size: cover;
     text-align: center;
     padding-top: 83px;
@@ -1055,7 +1055,6 @@ footer{
     .section__1__btn{
         border: 2px solid #fff;
     }
-
 }
 
 
@@ -1063,6 +1062,13 @@ footer{
 @media (max-width: 580px){
     .section__2__content{
         width: 100%;
+    }
+    #section__3{
+        background-attachment: scroll;
+    }
+    #section__5{
+        background-attachment: scroll;
+        
     }
 }
 
